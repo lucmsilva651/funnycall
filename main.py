@@ -4,6 +4,7 @@ from PIL import Image, ImageTk
 import pygame
 import os
 
+os.system('pip install -r req.txt')
 os.system('echo.')
 print("funnyCall - Made by Lucas Gabriel (lucmsilva)")
 print("https://github.com/lucmsilva651/funnycall")
