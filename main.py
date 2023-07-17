@@ -12,14 +12,14 @@ print("Using Pillow, Tkinter and pygame")
 os.system('echo.')
 
 def call_boykisser():
-    pygame.mixer.music.load('files/callnumbers/1928491298.mp3')
+    pygame.mixer.music.load('files/mp3/1928491298.mp3')
     pygame.mixer.music.play()
     messagebox.showinfo("boykisser", "boykisser!")
     print("boykisser!")
     dialog_window = tk.Toplevel(root)
     dialog_window.title("boykisser")
-    dialog_window.iconbitmap('files/callnumbers/1928491298.ico')
-    gif_path = 'files/callnumbers/1928491298.gif'
+    dialog_window.iconbitmap('files/icon/1928491298.ico')
+    gif_path = 'files/gif/1928491298.gif'
     gif = Image.open(gif_path)
     gif_width, gif_height = gif.size
     label = tk.Label(dialog_window, image=None)
@@ -36,7 +36,7 @@ def call_boykisser():
 
 
 def call_holymoly():
-    pygame.mixer.music.load('files/callnumbers/1928491298.mp3')
+    pygame.mixer.music.load('files/mp3/1928491298.mp3')
     pygame.mixer.music.play()
 
 
