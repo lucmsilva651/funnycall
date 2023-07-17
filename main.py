@@ -38,7 +38,7 @@ def call_boykisser():
 def call_wheredidyougo():
     pygame.mixer.music.load('files/mp3/1706270076.mp3')
     pygame.mixer.music.play()
-    messagebox.showinfo("Call: boykisser", "boykisser!")
+    messagebox.showinfo("Call: young fly on the track", "young fly on the track (niggers, niggers, niggers)")
     print("young fly on the track (niggers, niggers, niggers)")
     dialog_window = tk.Toplevel(root)
     dialog_window.title("young fly on the track")
