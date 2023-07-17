@@ -24,6 +24,6 @@ python main.py
 ```
 1928491298 - boykisser code
 1706270076 - young fly on the track code
-8261562652 - frog speaking chinese
+8261562652 - frog speaking chinese code
 ```
 More codes later.
