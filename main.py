@@ -14,7 +14,7 @@ os.system('echo.')
 def call_boykisser():
     pygame.mixer.music.load('files/mp3/1928491298.mp3')
     pygame.mixer.music.play()
-    messagebox.showinfo("boykisser", "boykisser!")
+    messagebox.showinfo("Call: boykisser", "boykisser!")
     print("boykisser!")
     dialog_window = tk.Toplevel(root)
     dialog_window.title("boykisser")
@@ -35,9 +35,28 @@ def call_boykisser():
         dialog_window.after(100)
 
 
-def call_holymoly():
-    pygame.mixer.music.load('files/mp3/1928491298.mp3')
+def call_wheredidyougo():
+    pygame.mixer.music.load('files/mp3/1706270076.mp3')
     pygame.mixer.music.play()
+    messagebox.showinfo("Call: boykisser", "boykisser!")
+    print("young fly on the track (niggers, niggers, niggers)")
+    dialog_window = tk.Toplevel(root)
+    dialog_window.title("young fly on the track")
+    dialog_window.iconbitmap('files/icon/1706270076.ico')
+    gif_path = 'files/gif/1706270076.gif'
+    gif = Image.open(gif_path)
+    gif_width, gif_height = gif.size
+    label = tk.Label(dialog_window, image=None)
+    label.pack()
+    frames = gif.n_frames
+    for i in range(frames):
+        gif.seek(i)
+        frame = gif.copy().resize((gif_width, gif_height))
+        frame_image = ImageTk.PhotoImage(frame)
+        label.configure(image=frame_image)
+        label.image = frame_image
+        dialog_window.update()
+        dialog_window.after(10)
 
 
 def button_click(number):
@@ -48,7 +67,7 @@ def button_click(number):
     if new_number == '1928491298':
         call_boykisser()
     if new_number == '1706270076':
-        call_holymoly()
+        call_wheredidyougo()
 
 
 def create_button(frame, number):
