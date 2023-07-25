@@ -4,6 +4,7 @@ from PIL import Image, ImageTk
 import pygame
 import os
 
+os.system('cls')
 os.system('pip install -r req.txt')
 os.system('cls')
 print("funnyCall - Made by Lucas Gabriel (lucmsilva)")
@@ -58,7 +59,7 @@ def call_wheredidyougo():
         label.image = frame_image
         dialog_window.update()
         dialog_window.after(10)
-        
+
 
 def call_fspkchinese():
     pygame.mixer.music.load('files/mp3/8261562652.mp3')
@@ -83,7 +84,6 @@ def call_fspkchinese():
         dialog_window.update()
         dialog_window.after(45)
 
-
 def button_click(number):
     current_number = entry.get()
     new_number = current_number + str(number)
@@ -95,8 +95,12 @@ def button_click(number):
         call_wheredidyougo()
     if new_number == '8261562652':
         call_fspkchinese()
-    #if new_number == 'tfrog1':
-    #    call_fspkchinese()
+    #if new_number == 'debugcode1':
+        #debug_call()
+
+def clear_number():
+    entry.delete(0, tk.END)
+    
 
 def create_button(frame, number):
     button = tk.Button(frame, text=str(number), width=5, height=2,
@@ -104,14 +108,18 @@ def create_button(frame, number):
     button.pack(side=tk.LEFT)
 
 
+#def debug_call():
+    # put the call code here to test
+
+
 pygame.mixer.init()
 root = tk.Tk()
 root.title("funnyCall")
 root.iconbitmap('files/icon/blank.ico')
-entry = tk.Entry(root, width=65)
+entry = tk.Entry(root, width=45)
 entry.pack()
 button_frame = tk.Frame(root)
 button_frame.pack()
-for number in range(1, 10):
+for number in range(0, 10):
     create_button(button_frame, number)
 root.mainloop()
