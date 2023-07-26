@@ -5,8 +5,6 @@ import pygame
 import os
 
 os.system('cls')
-os.system('pip install -r req.txt')
-os.system('cls')
 print("funnyCall - Made by Lucas Gabriel (lucmsilva)")
 print("https://github.com/lucmsilva651/funnycall")
 os.system('echo.')
