@@ -18,7 +18,7 @@ def call_boykisser():
     print("boykisser!")
     dialog_window = tk.Toplevel(root)
     dialog_window.title("boykisser")
-    dialog_window.iconbitmap('files/icon/1928491298.ico')
+    dialog_window.iconbitmap('files/icon/blank.ico')
     gif_path = 'files/gif/1928491298.gif'
     gif = Image.open(gif_path)
     gif_width, gif_height = gif.size
@@ -42,7 +42,7 @@ def call_wheredidyougo():
     print("young fly on the track (niggers, niggers, niggers)")
     dialog_window = tk.Toplevel(root)
     dialog_window.title("young fly on the track")
-    dialog_window.iconbitmap('files/icon/1706270076.ico')
+    dialog_window.iconbitmap('files/icon/blank.ico')
     gif_path = 'files/gif/1706270076.gif'
     gif = Image.open(gif_path)
     gif_width, gif_height = gif.size
@@ -66,7 +66,7 @@ def call_fspkchinese():
     print("你以下業務出現違規異常，了解詳情請按0， 由華語客服為你服務")
     dialog_window = tk.Toplevel(root)
     dialog_window.title("frog speaking chinese")
-    dialog_window.iconbitmap('files/icon/8261562652.ico')
+    dialog_window.iconbitmap('files/icon/blank.ico')
     gif_path = 'files/gif/8261562652.gif'
     gif = Image.open(gif_path)
     gif_width, gif_height = gif.size
@@ -93,8 +93,7 @@ def button_click(number):
         call_wheredidyougo()
     if new_number == '8261562652':
         call_fspkchinese()
-    #if new_number == 'debugcode1':
-        #debug_call()
+        
 
 def clear_number():
     entry.delete(0, tk.END)
@@ -104,10 +103,6 @@ def create_button(frame, number):
     button = tk.Button(frame, text=str(number), width=5, height=2,
                        command=lambda: button_click(number))
     button.pack(side=tk.LEFT)
-
-
-#def debug_call():
-    # put the call code here to test
 
 
 pygame.mixer.init()
