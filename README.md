@@ -1,15 +1,27 @@
 # funnyCall - Simple meme caller
-# Use of the program
-First, ensure you have the [most recent version of Python](https://www.python.org/downloads/)
 
-Download all script files here: [DOWNLOAD](https://github.com/lucmsilva651/funnycall/archive/refs/heads/master.zip) and extract then in a folder named *scriptfolder*
+## What this thing does?
+I don't really know. This project is from 2023 (as you can see in commit history), and I undocumented everything. There are some sample videos of how this work, but I'll manage to document and explain (and maybe improve) everything.
 
-## Now, with the updated Python and the script files downloaded, do this:
-Just run the RUN.cmd file.
+## Requirements
+- Python 3.11 or later
+- For Python deps: `pip install -r requirements.txt`
 
-# Call codes:
+## "Installation"
+Clone this repo with [Git](https://git-scm.com) with this command:
 ```
-1928491298 - boykisser code
-8261562652 - frog speaking chinese code
+git clone https://github.com/lucmsilva651/funnycall
 ```
-More codes later.
+And then go to the directory and run the script with Python:
+```
+cd funnycall
+cd src
+python main.py
+```
+Or run with `python3 main.py` if you are on Linux.
+
+## Call codes
+- `1928491298` - boykisser code
+- `8261562652` - frog speaking chinese code
+
+More codes on future updates.
